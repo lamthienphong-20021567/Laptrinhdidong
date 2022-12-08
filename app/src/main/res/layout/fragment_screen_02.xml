@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:id="@+id/screen_02"
+    tools:context=".screen_02">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="24dp"
+        android:padding="16dp"
+        android:text="Mời bạn chọn cấp độ"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/easy"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/pink"
+        android:drawableEnd="@android:drawable/presence_online"
+        android:gravity="center_vertical"
+        android:text="Dễ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/medium"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableEnd="@android:drawable/presence_invisible"
+        android:gravity="center_vertical"
+        android:text="Trung Bình"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hard"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:backgroundTint="@color/yellow"
+        android:drawableEnd="@android:drawable/ic_notification_overlay"
+        android:gravity="center_vertical"
+        android:text="Khó"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medium"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="3dp" />
+
+
+</LinearLayout>
